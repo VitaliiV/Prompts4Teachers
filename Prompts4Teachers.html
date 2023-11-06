@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Генератор промптов для уроков</title>
+<link rel="stylesheet" href="Prompts4Teachers.css">
+</head>
+<body>
+<div class="sidebar">
+  <ul>
+    <li>Промпт 1</li>
+    <!-- Добавляйте дополнительные пункты меню здесь -->
+    <li>Промпт 2</li>
+  </ul>
+</div>
+<div class="container">
+  <div class="description">
+    Подготовьте полный урок для моих учеников (Класс). Роль: Вы (Роль учителя). Явные инструкции: Напишите три абзаца о (Тема абзаца).
+    Включите в конец каждого абзаца вопрос с несколькими вариантами ответов. Создайте список всех предметно-специфичных слов с краткими
+    определениями. Создайте пять вопросов на основе материала. Создайте одно групповое задание на основе материала. Создайте одно задание
+    со сложным вопросом на основе материала. Параметры: Напишите текст с уровнем сложности чтения (Уровень сложности чтения) лет.
+    Урок длится (Длительность урока) минут. Пишите в профессиональном стиле.
+  </div>
+  <div class="prompt">
+    <label for="grade">Класс</label>
+    <input type="text" id="grade" placeholder="Введите класс">
+  </div>
+  <div class="prompt">
+    <label for="role">Роль учителя</label>
+    <input type="text" id="role" placeholder="Введите вашу роль">
+  </div>
+  <div class="prompt">
+    <label for="paragraphTopic">Тема абзаца</label>
+    <input type="text" id="paragraphTopic" placeholder="Введите тему абзацев">
+  </div>
+  <div class="prompt">
+    <label for="readingLevel">Уровень сложности чтения</label>
+    <input type="text" id="readingLevel" placeholder="Введите возрастную категорию">
+  </div>
+  <div class="prompt">
+    <label for="lessonDuration">Длительность урока</label>
+    <input type="text" id="lessonDuration" placeholder="Введите продолжительность урока в минутах">
+  </div>
+  <button id="generate">Сгенерировать текст</button>
+  <button id="copy">Копировать текст</button>
+  <div id="output"></div>
+</div>
+<script src="Prompts4Teachers.js"></script>
+</body>
+</html>

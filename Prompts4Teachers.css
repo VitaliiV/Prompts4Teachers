@@ -1,0 +1,24 @@
+body { font-family: Arial, sans-serif; display: flex; }
+.sidebar {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box; /* Make sure padding doesn't affect the width */
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+.sidebar li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.container { flex-grow: 1; padding: 20px; box-sizing: border-box; }
+.prompt { margin-bottom: 20px; }
+.description { margin-bottom: 20px; padding: 10px; background-color: #e7e7e7; border-left: 3px solid #4CAF50; }
+label { display: block; margin-bottom: 5px; }
+input, textarea, button { width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box; }
+button { background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+button:hover { background-color: #45a049; }
+#output { white-space: pre-wrap; margin-bottom: 10px; background-color: #fff; border: 1px solid #ccc; padding: 10px; }
